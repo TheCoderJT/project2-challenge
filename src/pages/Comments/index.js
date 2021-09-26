@@ -14,7 +14,7 @@ const Comments = () => {
       <Content>
         <ul>
           {data?.map((comment) => (
-            <li className='liItem'>
+            <li key={comment.id} className='liItem'>
               <code>{JSON.stringify(comment)}</code>
             </li>
           ))}

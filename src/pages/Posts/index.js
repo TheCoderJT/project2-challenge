@@ -13,7 +13,7 @@ const Posts = () => {
       <Content>
         <ul>
           {data?.map((post) => (
-            <li className='liItem'>
+            <li key={post.id} className='liItem'>
               <code>{JSON.stringify(post)}</code>
             </li>
           ))}
