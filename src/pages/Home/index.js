@@ -19,21 +19,12 @@ const Home = () => {
   }, []);
 
   return (
-    <Router>
+    <Router basename={"/project2-challenge"}>
       <Header />
       <Switch>
-        <Route path='/' exact>
-          {/* load post data */}
-          <Users />
-        </Route>
-        <Route path='/posts' exact>
-          {/* load post data */}
-          <Posts />
-        </Route>
-        <Route path='/comments' exact>
-          {/* load comment data */}
-          <Comments />
-        </Route>
+        <Route path='/' exact component={Users} />
+        <Route path='/posts' exact component={Posts} />
+        <Route path='/comments' exact component={Comments} />
       </Switch>
     </Router>
   );
