@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 
 // styles
 import { Wrapper, Content } from "./Users.styles";
@@ -6,7 +6,6 @@ import { Wrapper, Content } from "./Users.styles";
 import useFetch from "../../hook/useFetch";
 
 const Users = () => {
-  
   const { data, loading, error } = useFetch("https://jsonplaceholder.typicode.com/users");
   if (loading) return <h1>LOADING...</h1>;
   if (error) console.log(error);
