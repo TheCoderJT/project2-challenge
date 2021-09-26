@@ -14,9 +14,9 @@ const Header = () => {
   return (
     <>
       <Wrapper>
-        <Btns onClick={() => redirect("/project2-challenge")}>users</Btns>
-        <Btns onClick={() => redirect("/project2-challenge/posts")}>posts</Btns>
-        <Btns onClick={() => redirect("/project2-challenge/comments")}>comments</Btns>
+        <Btns onClick={() => redirect("/")}>users</Btns>
+        <Btns onClick={() => redirect("/posts")}>posts</Btns>
+        <Btns onClick={() => redirect("/comments")}>comments</Btns>
       </Wrapper>
     </>
   );
