@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 // styles
 import { Wrapper, Content } from "./Users.styles";
